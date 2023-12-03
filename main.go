@@ -3,6 +3,7 @@ package main
 import (
 	day01 "advent-of-code-2023/01"
 	day02 "advent-of-code-2023/02"
+	day03 "advent-of-code-2023/03"
 	"fmt"
 	"os"
 )
@@ -23,6 +24,10 @@ func main() {
 	case "2":
 		{
 			day02.Run()
+		}
+	case "3":
+		{
+			day03.Run()
 		}
 	default:
 		{
