@@ -26,7 +26,7 @@ var symbolRe = regexp.MustCompile(`[^0-9\.]`)
 var digitRe = regexp.MustCompile(`[0-9]`)
 
 func Run() {
-	fmt.Println("Day 3")
+	fmt.Println("day 3")
 
 	rawData := utils.ReadFile("03/data.txt")
 

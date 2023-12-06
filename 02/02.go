@@ -13,7 +13,7 @@ var maxGreen1 = 13
 var maxBlue1 = 14
 
 func Run() {
-	fmt.Println("Day 2")
+	fmt.Println("day 2")
 
 	rawData := utils.ReadFile("02/data.txt")
 

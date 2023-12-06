@@ -71,7 +71,7 @@ var numbers = []token{
 }
 
 func Run() {
-	fmt.Println("Day 1, Question 1")
+	fmt.Println("day 1, Question 1")
 
 	rawData := utils.ReadFile("01/data.txt")
 

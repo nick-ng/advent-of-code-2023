@@ -13,7 +13,7 @@ var split1Re = regexp.MustCompile(` *(:|\|) *`)
 var spacesRe = regexp.MustCompile(` +`)
 
 func Run() {
-	fmt.Println("Day 4")
+	fmt.Println("day 4")
 
 	rawData := utils.ReadFile("04/data.txt")
 

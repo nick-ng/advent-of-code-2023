@@ -16,7 +16,7 @@ type Mapping struct {
 }
 
 func Run() {
-	fmt.Println("Day 5")
+	fmt.Println("day 5")
 
 	rawData := utils.ReadFile("05/data.txt")
 

@@ -3,7 +3,10 @@ package utils
 import (
 	"fmt"
 	"os"
+	"regexp"
 )
+
+var SpacesRe = regexp.MustCompile(` +`)
 
 func ReadFile(path string) string {
 	bytes, err := os.ReadFile(path)

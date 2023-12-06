@@ -1,7 +1,7 @@
 {
 	"configurations": [
 		{
-			"name": "Day 06",
+			"name": "day 06",
 			"type": "go",
 			"request": "launch",
 			"mode": "debug",
@@ -11,7 +11,7 @@
 			]
 		},
 		{
-			"name": "Day 05",
+			"name": "day 05",
 			"type": "go",
 			"request": "launch",
 			"mode": "debug",
@@ -21,7 +21,7 @@
 			]
 		},
 		{
-			"name": "Day 04",
+			"name": "day 04",
 			"type": "go",
 			"request": "launch",
 			"mode": "debug",
@@ -31,7 +31,7 @@
 			]
 		},
 		{
-			"name": "Day 03",
+			"name": "day 03",
 			"type": "go",
 			"request": "launch",
 			"mode": "debug",
@@ -41,7 +41,7 @@
 			]
 		},
 		{
-			"name": "Day 02",
+			"name": "day 02",
 			"type": "go",
 			"request": "launch",
 			"mode": "debug",
@@ -51,7 +51,7 @@
 			]
 		},
 		{
-			"name": "Day 01",
+			"name": "day 01",
 			"type": "go",
 			"request": "launch",
 			"mode": "debug",
