@@ -49,7 +49,7 @@ func Run() {
 		gameId, err := strconv.ParseInt(gameIdMatch[1], 10, 0)
 
 		if err != nil {
-			fmt.Println("couldn't parse int:", err)
+			fmt.Println("cannot parse int:", err)
 			continue
 		}
 

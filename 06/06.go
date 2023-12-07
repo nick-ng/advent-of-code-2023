@@ -20,14 +20,14 @@ func Run() {
 	time2a := strings.Join(times, "")
 	time2, err := strconv.Atoi(time2a)
 	if err != nil {
-		fmt.Println("couldn't convert time2 to int", time2, err)
+		fmt.Println("cannot convert time2 to int", time2, err)
 		os.Exit(1)
 	}
 
 	distance2a := strings.Join(distances, "")
 	distance2, err := strconv.Atoi(distance2a)
 	if err != nil {
-		fmt.Println("couldn't convert distance2 to int", distance2a, err)
+		fmt.Println("cannot convert distance2 to int", distance2a, err)
 		os.Exit(1)
 	}
 
@@ -35,13 +35,13 @@ func Run() {
 	for i := range times {
 		time, err := strconv.Atoi(times[i])
 		if err != nil {
-			fmt.Println("couldn't convert time to int", times[i], err)
+			fmt.Println("cannot convert time to int", times[i], err)
 			os.Exit(1)
 		}
 
 		distance, err := strconv.Atoi(distances[i])
 		if err != nil {
-			fmt.Println("couldn't convert distance to int", distances[i], err)
+			fmt.Println("cannot convert distance to int", distances[i], err)
 			os.Exit(1)
 		}
 

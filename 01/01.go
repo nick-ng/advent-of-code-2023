@@ -93,7 +93,7 @@ func Run() {
 		firstDigit, err := strconv.Atoi(firstCharacter[1])
 
 		if err != nil {
-			fmt.Println("couldn't match first character")
+			fmt.Println("cannot match first character")
 		}
 
 		re1b := regexp.MustCompile(`(\d)[^\d]*$`)
@@ -103,7 +103,7 @@ func Run() {
 		lastDigit, err := strconv.Atoi(lastCharacter[1])
 
 		if err != nil {
-			fmt.Println("couldn't match last character")
+			fmt.Println("cannot match last character")
 		}
 
 		number1 := firstDigit*10 + lastDigit

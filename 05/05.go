@@ -197,7 +197,7 @@ func applyRangeToMap(mappings []Mapping, rangeString string) []Mapping {
 		t, err := strconv.Atoi(seedToSoilString)
 
 		if err != nil {
-			fmt.Println("couldn't convert seedToSoilString to int", seedToSoilString)
+			fmt.Println("cannot convert seedToSoilString to int", seedToSoilString)
 			os.Exit(1)
 		}
 

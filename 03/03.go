@@ -71,7 +71,7 @@ func Run() {
 					partNumberValue, err := strconv.Atoi(currentDigits)
 
 					if err != nil {
-						fmt.Println("couldn't convert digits to a number", currentDigits)
+						fmt.Println("cannot convert digits to a number", currentDigits)
 						os.Exit(1)
 					}
 
