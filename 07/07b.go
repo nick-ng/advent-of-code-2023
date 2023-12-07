@@ -110,18 +110,12 @@ func getHandValueJokers(hand string) int {
 		handPoints = 1
 	}
 
-	// ba987654321
-	// H0011223344
 	handValue += handPoints * 1e10
-
-	fmt.Println(hand, cardCounts, handPoints)
 
 	return handValue
 }
 
 func RunJokers() {
-	fmt.Println("day 7")
-
 	rawData := utils.ReadFile("07/data.txt")
 
 	rawHands := strings.Split(rawData, "\n")
@@ -147,8 +141,6 @@ func RunJokers() {
 			HandValue: handValue,
 			Bid:       bid,
 		})
-
-		fmt.Println(hand, handValue)
 	}
 
 	slices.SortFunc(hands, func(a, b handBid) int {

@@ -98,11 +98,7 @@ func getHandValue(hand string) int {
 		handPoints = 1
 	}
 
-	// ba987654321
-	// H0011223344
 	handValue += handPoints * 1e10
-
-	fmt.Println(hand, cardCounts, handPoints)
 
 	return handValue
 }
@@ -141,8 +137,6 @@ func Run() {
 			HandValue: handValue,
 			Bid:       bid,
 		})
-
-		fmt.Println(hand, handValue)
 	}
 
 	slices.SortFunc(hands, func(a, b handBid) int {
