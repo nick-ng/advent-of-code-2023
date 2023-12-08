@@ -8,6 +8,7 @@ import (
 	day05 "advent-of-code-2023/05"
 	day06 "advent-of-code-2023/06"
 	day07 "advent-of-code-2023/07"
+	day08 "advent-of-code-2023/08"
 	"fmt"
 	"os"
 	"time"
@@ -52,6 +53,10 @@ func main() {
 		{
 			day07.Run()
 			day07.RunJokers()
+		}
+	case "8":
+		{
+			day08.Run()
 		}
 	default:
 		{
