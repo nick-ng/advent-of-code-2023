@@ -29,3 +29,13 @@ func SliceContainsString(haystack []string, needle string) bool {
 
 	return false
 }
+
+func SliceContainsInt(haystack []int, needle int) bool {
+	for _, s := range haystack {
+		if s == needle {
+			return true
+		}
+	}
+
+	return false
+}

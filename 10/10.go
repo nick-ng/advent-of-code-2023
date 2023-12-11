@@ -481,8 +481,3 @@ func getTurnDirection(coord1, coord2 coordinateType, destinationCharacter string
 	}
 	return "straight"
 }
-
-func getCoordinateString(coord coordinateType) string {
-	coordinateString := fmt.Sprintf("%d-%d", coord.Row, coord.Column)
-	return coordinateString
-}
