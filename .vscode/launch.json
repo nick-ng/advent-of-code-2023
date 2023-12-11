@@ -1,6 +1,16 @@
 {
 	"configurations": [
 		{
+			"name": "day 10",
+			"type": "go",
+			"request": "launch",
+			"mode": "debug",
+			"program": "main.go",
+			"args": [
+				"10"
+			]
+		},
+		{
 			"name": "day 09",
 			"type": "go",
 			"request": "launch",
