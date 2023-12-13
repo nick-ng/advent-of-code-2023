@@ -12,6 +12,8 @@ import (
 	day09 "advent-of-code-2023/09"
 	day10 "advent-of-code-2023/10"
 	day11 "advent-of-code-2023/11"
+	day12 "advent-of-code-2023/12"
+	day13 "advent-of-code-2023/13"
 	"fmt"
 	"os"
 	"time"
@@ -72,6 +74,14 @@ func main() {
 	case "11":
 		{
 			day11.Run()
+		}
+	case "12":
+		{
+			day12.Run()
+		}
+	case "13":
+		{
+			day13.Run()
 		}
 	default:
 		{

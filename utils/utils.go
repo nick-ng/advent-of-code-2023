@@ -39,3 +39,13 @@ func SliceContainsInt(haystack []int, needle int) bool {
 
 	return false
 }
+
+func PadStringStart(s string, minLength int, padding string) string {
+	newString := s
+
+	for len(newString) < minLength {
+		newString = padding + newString
+	}
+
+	return newString
+}
