@@ -19,14 +19,14 @@ func Run() {
 
 	total1 := 0
 	total2 := 0
-	for i, row := range rows {
+	for _, row := range rows {
 		if len(row) == 0 {
 			continue
 		}
 
 		temp := strings.Split(row, " ")
 		springConditions := temp[0]
-		springConditions2 := temp[0] + "?" + temp[0] + "?" + temp[0] + "?" + temp[0] + "?" + temp[0]
+		// springConditions2 := temp[0] + "?" + temp[0] + "?" + temp[0] + "?" + temp[0] + "?" + temp[0]
 
 		temp2 := strings.Split(temp[1], ",")
 
@@ -51,30 +51,32 @@ func Run() {
 		springConditionsGroups2 = append(springConditionsGroups2, springConditionsGroups...)
 
 		combinations := getCombinations(springConditions, totalDamaged)
-		combinations2 := getCombinations(springConditions2, totalDamaged*5)
+		// combinations2 := getCombinations(springConditions2, totalDamaged*5)
 
 		validCombinations := 0
+		tempValid := 0
 		for _, combination := range combinations {
 			overall := validateRow2(combination, springConditionsGroups)
 
 			if overall {
 				validCombinations++
+				tempValid++
 			}
 		}
+		fmt.Println(row, ":", tempValid)
 
 		// fmt.Println(i+1, springConditions, validCombinations, "/", len(combinations))
 		total1 += validCombinations
 
 		validCombinations2 := 0
-		for _, combination := range combinations2 {
-			overall := validateRow2(combination, springConditionsGroups2)
+		// for _, combination := range combinations2 {
+		// 	overall := validateRow2(combination, springConditionsGroups2)
 
-			if overall {
-				validCombinations2++
-			}
-		}
+		// 	if overall {
+		// 		validCombinations2++
+		// 	}
+		// }
 
-		fmt.Println(i+1, validCombinations2, "/", len(combinations2))
 		total2 += validCombinations2
 	}
 

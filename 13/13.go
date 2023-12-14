@@ -81,23 +81,6 @@ func Run() {
 	fmt.Println("total2:", total2)
 }
 
-func transposeSliceSlice(input [][]string) [][]string {
-	output := [][]string{}
-	for i := 0; i < len(input[0]); i++ {
-		length := len(input)
-		oo := make([]string, length)
-		output = append(output, oo)
-	}
-
-	for i, inputI := range input {
-		for j, inputJ := range inputI {
-			output[j][i] = inputJ
-		}
-	}
-
-	return output
-}
-
 func parseRawPattern(input string) ([]string, []string, [][]string) {
 	temp := trimRe.ReplaceAllString(input, "")
 
@@ -111,7 +94,7 @@ func parseRawPattern(input string) ([]string, []string, [][]string) {
 		tempPattern = append(tempPattern, cols)
 	}
 
-	transposed := transposeSliceSlice(tempPattern)
+	transposed := utils.TransposeSliceSlice(tempPattern)
 
 	patternT := []string{}
 	for _, rowS := range transposed {

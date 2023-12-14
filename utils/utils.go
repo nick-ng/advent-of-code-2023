@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"regexp"
+	"strings"
 )
 
 var SpacesRe = regexp.MustCompile(` +`)
@@ -48,4 +49,43 @@ func PadStringStart(s string, minLength int, padding string) string {
 	}
 
 	return newString
+}
+
+func PadStringEnd(s string, minLength int, padding string) string {
+	newString := s
+
+	for len(newString) < minLength {
+		newString = newString + padding
+	}
+
+	return newString
+}
+
+func TransposeSliceSlice(input [][]string) [][]string {
+	output := make([][]string, len(input[0]))
+	for _, row := range input {
+		for i, col := range row {
+			output[i] = append(output[i], col)
+		}
+	}
+
+	return output
+}
+
+func TransposeSliceString(input []string) []string {
+	columns := make([][]string, len(input[0]))
+	for _, row := range input {
+		cols := strings.Split(row, "")
+		for i, col := range cols {
+			columns[i] = append(columns[i], col)
+		}
+	}
+
+	output := []string{}
+	for _, col := range columns {
+		newColumn := strings.Join(col, "")
+		output = append(output, newColumn)
+	}
+
+	return output
 }
